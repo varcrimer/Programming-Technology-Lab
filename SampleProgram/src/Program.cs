@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Calculator calculator = new Calculator();
+        Calculator calculator = new Calculator(new ConsoleUserInput());
         calculator.Start();
     }
 }
