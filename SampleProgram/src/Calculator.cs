@@ -26,7 +26,7 @@ namespace SampleProgram.src
 
         public void Start()
         {
-            Console.WriteLine("Sample Program: Calculator");
+            Console.WriteLine("Sample Program: Calculator(only addiiton and substraction)");
             Console.WriteLine("What do you want to do?");
             bool running = true;
             while (running)
@@ -35,9 +35,7 @@ namespace SampleProgram.src
                 Console.WriteLine("Enter the number of the action you want to perform:");
                 Console.WriteLine("1. Addition");
                 Console.WriteLine("2. Subtraction");
-                Console.WriteLine("3. Multiplication");
-                Console.WriteLine("4. Division");
-                Console.WriteLine("5. Quit");
+                Console.WriteLine("3. Quit");
                 Console.WriteLine();
 
                 string input = _userInput.GetInput();
@@ -50,12 +48,6 @@ namespace SampleProgram.src
                         PerformOperation(Subtraction);
                         break;
                     case "3":
-                        PerformOperation(Multiplication);
-                        break;
-                    case "4":
-                        PerformOperation(Division);
-                        break;
-                    case "5":
                         Console.WriteLine("See you soon!!");
                         Console.WriteLine("Quitting Calculator...");
                         running = false;
@@ -73,7 +65,7 @@ namespace SampleProgram.src
             operation(number1, number2);
         }
 
-        private (double, double) NumberInput()
+        public (double, double) NumberInput()
         {
             double number1;
             double number2;
@@ -94,23 +86,6 @@ namespace SampleProgram.src
                 }
             }
             return (number1, number2);
-        }
-
-        private void Division(double number1, double number2)
-        {
-            if (number2 == 0)
-            {
-                Console.WriteLine("You're dividing by zero!");
-                return;
-            }
-            double result = number1 / number2;
-            Console.WriteLine($"Result: {result}");
-        }
-
-        private void Multiplication(double number1, double number2)
-        {
-            double result = number1 * number2;
-            Console.WriteLine($"Result: {result}");
         }
 
         private void Subtraction(double number1, double number2)
