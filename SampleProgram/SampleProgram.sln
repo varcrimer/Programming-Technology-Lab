@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleProgram", "SampleProgram.csproj", "{BD8B0EF9-914D-43B5-9A3B-9FE919FD3768}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProgram.Tests", "..\SampleProgram.Tests\SampleProgram.Tests.csproj", "{31257BD2-BE41-4EEC-9882-65D5A9E1CA86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleProgram.Tests", "..\SampleProgram.Tests\SampleProgram.Tests.csproj", "{31257BD2-BE41-4EEC-9882-65D5A9E1CA86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculator", "Calculator", "{D4F32FFE-938B-4C07-BC9A-5D33F2B140F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD8B0EF9-914D-43B5-9A3B-9FE919FD3768} = {D4F32FFE-938B-4C07-BC9A-5D33F2B140F0}
+		{31257BD2-BE41-4EEC-9882-65D5A9E1CA86} = {D4F32FFE-938B-4C07-BC9A-5D33F2B140F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {628129FE-76C5-46F3-872A-D722C1E01B2D}
